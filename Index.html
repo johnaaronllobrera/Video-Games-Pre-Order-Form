@@ -1,0 +1,290 @@
+<!--
+Author: John Aaron B. Llobrera
+Affiliation: BS Statistics, Institute of Statistics, University of the Philippines Los Baños
+E-Mail: jbllobrera@up.edu.ph
+Code Description:
+    This HTML file contains a pre-order form for "The Steam-iest Summer Sale!" event. 
+    It allows customers to pre-order games and provides options for free games and trial 
+    games. Customers can also provide delivery details and select their preferred payment method.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Steam-iest Summer Sale!: Pre-Order Form</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+    <!-- Title Header -->
+    <div class="header">
+        <h1><i>The Steam-iest Summer Sale!</i></h1>
+        <div class="nameplate">
+            <h2>PRE-ORDER FORM</h2>
+        </div>
+    </div>
+    <!-- Start of Game Order Form -->
+    <form id="gameOrderForm">
+        <!-- Start of Customer Information Fieldset -->
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required><br>
+        </fieldset>
+        <!-- End of Customer Information Fieldset -->
+
+        <!-- Start of Games Fieldset -->
+        <fieldset>
+            <legend>Games</legend>
+
+            <!-- Triple A Games Order Options -->
+            <label><p>Triple A Games</p></label><br>
+
+            <!-- Game 1 -->
+            <div class="game-container">
+                <img src="Coverarts\game1_cover.jpg" alt="Like a Dragon: Infinite Wealth" class="game-cover">
+                <input type="checkbox" id="game1" name="game" value="game1" checked>
+                <label for="game1">Like a Dragon... | Php 3999</label><br>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-container">
+                <img src="Coverarts\game2_cover.jpg" alt="Alan Wake 2" class="game-cover">
+                <input type="checkbox" id="game2" name="game" value="game2">
+                <label for="game2">Alan Wake 2 | Php 2999</label><br>
+            </div>
+
+            <!-- Game 3 -->
+            <div class="game-container">
+                <img src="Coverarts\game3_cover.jpg" alt="Tekken 8" class="game-cover">
+                <input type="checkbox" id="game3" name="game" value="game3">
+                <label for="game3">Tekken 8 | Php 4200</label><br>
+            </div>
+
+            <!-- Game 4 -->
+            <div class="game-container">
+                <img src="Coverarts\game4_cover.jpg" alt="Marvel's Spider-Man 2" class="game-cover">
+                <input type="checkbox" id="game4" name="game" value="game4">
+                <label for="game4">Marvel's Spider-Man 2 | Php 4999</label><br>
+            </div>
+
+            <!-- Game 5 -->
+            <div class="game-container">
+                <img src="Coverarts\game5_cover.jpg" alt="HELLDIVERS 2" class="game-cover">
+                <input type="checkbox" id="game5" name="game" value="game5">
+                <label for="game5">HELLDIVERS 2 | Php 2000</label><br>
+            </div>
+
+            <!-- Game 6 -->
+            <div class="game-container">
+                <img src="Coverarts\game6_cover.jpg" alt="Starfield" class="game-cover">
+                <input type="checkbox" id="game6" name="game" value="game6">
+                <label for="game6">Starfield | Php 3499</label><br>
+            </div>
+
+            <!-- Game 7 -->
+            <div class="game-container">
+                <img src="Coverarts\game7_cover.jpg" alt="Resident Evil 4" class="game-cover">
+                <input type="checkbox" id="game7" name="game" value="game7">
+                <label for="game7">Resident Evil 4 Remake | Php 5499</label>
+            </div>
+
+            <!-- Free Game -->
+            <br>
+            <label><p>Every Purchase: Get One Free Game</p></label><br>
+
+            <!-- Game 1 -->
+            <div class="game-container">
+                <img src="Coverarts/freegame1_cover.jpg" alt="Stardew Valley Cover Art" class="game-cover">
+                <input type="radio" id="freeGame1" name="freeGame" value="Stardew Valley">
+                <label for="freeGame1">Stardew Valley</label><br>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-container">
+                <img src="Coverarts/freegame2_cover.jpg" alt="Celeste Cover Art" class="game-cover">
+                <input type="radio" id="freeGame2" name="freeGame" value="Celeste">
+                <label for="freeGame2">Celeste</label><br>
+            </div>
+
+            <!-- Game 3 -->
+            <div class="game-container">
+                <img src="Coverarts/freegame3_cover.jpg" alt="Undertale Cover Art" class="game-cover">
+                <input type="radio" id="freeGame3" name="freeGame" value="Undertale">
+                <label for="freeGame3">Undertale</label><br>
+            </div>
+
+            <!-- Game 4 -->
+            <div class="game-container">
+                <img src="Coverarts/freegame4_cover.jpg" alt="Braid Cover Art" class="game-cover">
+                <input type="radio" id="freeGame4" name="freeGame" value="Braid">
+                <label for="freeGame4">Braid</label><br>
+            </div>
+
+            <!-- Game 5 -->
+            <div class="game-container">
+                <img src="Coverarts/freegame5_cover.jpg" alt="Cuphead Cover Art" class="game-cover">
+                <input type="radio" id="freeGame5" name="freeGame" value="Cuphead">
+                <label for="freeGame5">Cuphead</label><br>
+            </div>
+
+            <!-- Game 6 -->
+            <div class="game-container">
+                <img src="Coverarts/freegame6_cover.jpg" alt="Cave Story Cover Art" class="game-cover">
+                <input type="radio" id="freeGame6" name="freeGame" value="Cave Story">
+                <label for="freeGame6">Cave Story</label><br>
+            </div>
+
+            <!-- Game 7 -->
+            <div class="game-container">
+                <img src="Coverarts/freegame7_cover.jpg" alt="Palworld Cover Art" class="game-cover">
+                <input type="radio" id="freeGame7" name="freeGame" value="Palworld">
+                <label for="freeGame7">Palworld</label><br>
+            </div>
+
+            <!-- Game 8 -->
+            <div class="game-container">
+                <img src="Coverarts/freegame8_cover.jpg" alt="Among Us Cover Art" class="game-cover">
+                <input type="radio" id="freeGame8" name="freeGame" value="Among Us">
+                <label for="freeGame8">Among Us</label>
+            </div>
+
+            <!-- Free Trial Game -->
+            <br>
+            <label><p>Every Purchase: Get One Free Trial Game</p></label><br>
+
+            <!-- Trial Game 1 -->
+            <div class="game-container">
+                <img src="Coverarts/trialgame1_cover.jpg" alt="Blasphemous Cover Art" class="game-cover">
+                <input type="radio" id="trialGame1" name="trialGame" value="Blasphemous">
+                <label for="trialGame1">Blasphemous</label><br>
+            </div>
+
+            <!-- Trial Game 2 -->
+            <div class="game-container">
+                <img src="Coverarts/trialgame2_cover.jpg" alt="Cyberpunk 2077 Cover Art" class="game-cover">
+                <input type="radio" id="trialGame2" name="trialGame" value="Cyberpunk 2077">
+                <label for="trialGame2">Cyberpunk 2077 | </label><br>
+            </div>
+
+            <!-- Trial Game 3 -->
+            <div class="game-container">
+                <img src="Coverarts/trialgame3_cover.jpg" alt="DOTA 2 Cover Art" class="game-cover">
+                <input type="radio" id="trialGame3" name="trialGame" value="DOTA 2">
+                <label for="trialGame3">DOTA 2</label><br>
+            </div>
+
+            <!-- Trial Game 4 -->
+            <div class="game-container">
+                <img src="Coverarts/trialgame4_cover.jpg" alt="League of Legends Cover Art" class="game-cover">
+                <input type="radio" id="trialGame4" name="trialGame" value="League of Legends">
+                <label for="trialGame4">League of Legends</label><br>
+            </div>
+
+            <!-- Trial Game 5 -->
+            <div class="game-container">
+                <img src="Coverarts/trialgame5_cover.jpg" alt="Mobile Legends Cover Art" class="game-cover">
+                <input type="radio" id="trialGame5" name="trialGame" value="Mobile Legends">
+                <label for="trialGame5">Mobile Legends</label>
+            </div>
+
+            <!-- Wishlist Games -->
+            <label><p>Wishlist Game</p></label><br>
+
+            <!-- Wishlist Game 1 -->
+            <div class="game-container">
+                <img src="Coverarts/wishlistgame1_cover.jpg" alt="Nightingale Cover Art" class="game-cover">
+                <input type="checkbox" id="wishlistgame1" name="wishlistgame" value="wishlistgame1" checked>
+                <label for="wishlistgame1">Nightingale</label><br>
+            </div>
+
+            <!-- Wishlist Game 2 -->
+            <div class="game-container">
+                <img src="Coverarts/wishlistgame2_cover.jpg" alt="Homeworld Cover Art" class="game-cover">
+                <input type="checkbox" id="wishlistgame2" name="wishlistgame" value="wishlistgame2">
+                <label for="wishlistgame2">Homeworld 3</label><br>
+            </div>
+
+            <!-- Wishlist Game 3 -->
+            <div class="game-container">
+                <img src="Coverarts/wishlistgame3_cover.jpg" alt="WWE Cover Art" class="game-cover">
+                <input type="checkbox" id="wishlistgame3" name="wishlistgame" value="wishlistgame3">
+                <label for="wishlistgame3">WWE 2K24</label><br>
+            </div>
+
+            <!-- Wishlist Game 4 -->
+            <div class="game-container">
+                <img src="Coverarts/wishlistgame4_cover.jpg" alt="JJK Cover Art" class="game-cover">
+                <input type="checkbox" id="wishlistgame4" name="wishlistgame" value="wishlistgame4">
+                <label for="wishlistgame4">JJK</label><br>
+            </div>
+
+            <!-- Wishlist Game 5 -->
+            <div class="game-container">
+                <img src="Coverarts/wishlistgame5_cover.jpg" alt="AOT Cover Art" class="game-cover">
+                <input type="checkbox" id="wishlistgame5" name="wishlistgame" value="wishlistgame5">
+                <label for="wishlistgame5">AOT 2</label><br>
+            </div>
+
+            <!-- Wishlist Game 6 -->
+            <div class="game-container">
+                <img src="Coverarts/wishlistgame6_cover.jpg" alt="Fun Time Cover Art" class="game-cover">
+                <input type="checkbox" id="wishlistgame6" name="wishlistgame" value="wishlistgame6">
+                <label for="wishlistgame6">Fun Time</label><br>
+            </div>
+        </fieldset>
+        <!-- End of Games Fieldset -->
+
+        <!-- Start of Delivery Details Fieldset -->
+        <fieldset>
+            <legend>Delivery Details</legend>
+            <label for="physicalCopy">Would you like a mailed physical copy?</label>
+            <input type="radio" id="yesCopy" name="physicalCopy" value="Yes">
+            <label for="yesCopy">Yes</label>
+            <input type="radio" id="noCopy" name="physicalCopy" value="No" checked>
+            <label for="noCopy">No</label><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Delivery address here..." rows="4" cols="50"></textarea><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" placeholder="mm/dd/yyyy"><br><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" placeholder="11:59 PM"><br>
+        </fieldset>
+        <!-- End of Delivery Details Fieldset -->
+
+        <!-- Start of Payment Method Fieldset -->
+        <fieldset>
+            <legend>Payment Method</legend>
+            <label for="paymentMethod">Payment Method</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="Gcash/Maya">Gcash/Maya</option>
+                <option value="CreditCard">Credit Card</option>
+                <option value="Others">Others</option>
+            </select><br><br>
+
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="09XXXXXXXXX" required pattern="09\d{9}"><br>
+        </fieldset>
+        <!-- End of Payment Method Fieldset -->
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+    <!-- End of Game Order Form -->
+    <!-- JavaScript -->
+    <script src="Script.js">
+    </script>
+</body>
+</html>

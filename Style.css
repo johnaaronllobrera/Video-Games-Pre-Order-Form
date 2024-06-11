@@ -1,0 +1,196 @@
+/* 
+Name: Llobrera, John Aaron B. 
+SN: 2022-11656
+Degree Program: BS Statistics
+Laboratory Section: C1L 
+Exercise 09: CSS
+*/
+
+/* General Styles */
+/* ------------------------------------------- */
+
+/* Header Styles */
+/* -------------- */
+
+.header {
+    padding: 40px 0; /* Spacing for header */
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 40px; /* Larger font size for title */
+    color: #ff6d00; /* Orange title color */
+    margin-bottom: 10px;
+    font-family: 'Courier New'; /* Cool gaming font */
+    animation: glow 2s infinite alternate; /* Glowing animation */
+}
+
+.nameplate {
+    display: inline-block;
+    padding: 5px 15px; /* Adjust padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.nameplate h2 {
+    font-size: 18px; /* Larger font size for subtitle */
+    color: #ff6d00; /* Orange subtitle color */
+    margin: 0;
+    font-weight: normal; /* Remove bold style */
+    text-transform: uppercase; /* Uppercase the subtitle */
+}
+
+/* Animation */
+/* ---------- */
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 109, 0, 0.5); /* Initial shadow */
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 109, 0, 1); /* Stronger shadow */
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 109, 0, 0.5); /* Return to initial shadow */
+    }
+}
+
+/* Body Styles */
+/* ------------ */
+
+body {
+    font-family: 'Courier New';
+    background-color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Form Styles */
+/* ------------ */
+
+form {
+    max-width: 600px;
+    margin: 0 auto; /* Center the form */
+    background-color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+    border: 2px solid #ff6d00;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #ff6d00;
+    padding: 5px 10px; /* Adjust padding */
+    border: 2px solid #ff6d00; /* Same border as other elements */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Label Styles */
+/* ------------- */
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Input, Textarea, Button, Select Styles */
+/* --------------------------------------- */
+
+input[type="text"],
+input[type="email"],
+textarea,
+button[type="submit"],
+button[type="reset"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select {
+    width: calc(100%);
+    padding: 10px;
+    border: 2px solid #ff6d00;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Checkbox and Radio Button Styles */
+/* --------------------------------- */
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: none; /* Hide checkboxes and radio buttons */
+}
+
+input[type="checkbox"]+label,
+input[type="radio"]+label {
+    font-weight: normal;
+    color: #fff;
+    vertical-align: middle; /* Align checkboxes and radio buttons vertically */
+}
+
+input[type="checkbox"]+label:before,
+input[type="radio"]+label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ff6d00;
+    border-radius: 4px;
+    margin-right: 10px;
+    vertical-align: middle; /* Align squares vertically */
+}
+
+input[type="checkbox"]:checked+label:before,
+input[type="radio"]:checked+label:before {
+    background-color: #28a745;
+}
+
+/* Paragraph Styles */
+/* ----------------- */
+
+p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ff6d00;
+    text-align: center;
+}
+
+/* Button Hover Effect */
+/* -------------------- */
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Game container and cover image styling */
+/* -------------------------------------- */
+
+.game-container {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.game-cover {
+    width: 200px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.game-cover:hover {
+    transform: scale(2.0); /* Zoom effect */
+    box-shadow: 0 0 20px rgba(255, 109, 0, 0.5); /* Glow effect */
+}
